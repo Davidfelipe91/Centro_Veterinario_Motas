@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lenguajes web</title>
+</head>
+<body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=322331694305&autoLogAppEvents=1" nonce="lSvCEmPz"></script>
+	
+	<p>En esta parte se pondrá un párrafo</p>
+	<p>Este párrafo tiene <br> dos lineas </p>
+	<h1>Título principal</h1>
+	<h2>Título secundario</h2>
+	<h3>Título menor</h3>
+	<p>Palabra normal <b>palabra en negrita</b><em> palabra en cursiva</em></p>
+	<hr> regla horizontal
+	<h2>Ejemplos de enlaces</h2>
+	<a href="otra.html">Otra </a> <br>
+	<a href="clase/nuevo.html">Nuevo </a>
+
+	<br>
+	<a href="https://www.tdea.edu.co" target="_blank">Página del TdeA en nueva pestaña</a>
+
+	<br>
+
+	<a href="https://www.tdea.edu.co" target="_blank"><img src="https://www.tdea.edu.co/images/tdea/logos/logo-ppal.jpg" width="80%"></a>
+	<p>
+		Himno en párrafo 
+		¡Oh, gloria inmarcesible!
+		¡Oh, júbilo inmortal!
+		¡En surcos de dolores
+		El bien germina ya!
+	</p>
+	<pre>
+		Himno organizado
+
+		Himno en párrafo
+		¡Oh, gloria inmarcesible!
+		¡Oh, júbilo inmortal!
+		¡En surcos de dolores
+		El bien germina ya!
+	</pre>
+
+	<ol type="I" >
+		<li>elemento 1</li>
+		<li>elemento 2</li>
+		<li>elemento 3</li>
+	</ol>
+
+	<ol  >
+		<li>elemento 1</li>
+		<li>elemento 2</li>
+		<li>elemento 3</li>
+	</ol>
+
+	<ol type="A" >
+		<li>elemento 1</li>
+		<li>elemento 2</li>
+		<ol type="a" >
+			<li>elemento 1</li>
+			<li>elemento 2</li>
+			<li>elemento 3</li>
+		</ol>
+	</ol>
+
+	<ul style="list-style-type:disc;">
+		<li>elemento 1</li>
+		<ul style="list-style-type:circle;">
+			<li>elemento 1</li>
+			<li>elemento 2</li>
+			<li>elemento 3</li>
+		</ul>
+		<li>elemento 3</li>
+	</ul>
+
+	<ul style="list-style-type:circle;  ">
+		<li>elemento 1</li>
+		<li style="list-style-type:circle; border:3px;border-color: black; border-style: double ">elemento 2</li>
+		<li>elemento 3</li>
+	</ul>
+
+	<ul style="list-style-type:square;">
+		<li>elemento 1</li>
+		<li>elemento 2</li>
+		<li>elemento 3</li>
+	</ul>
+
+	<ul style="list-style-type:none;">
+		<li>elemento 1</li>
+		<li>elemento 2</li>
+		<li>elemento 3</li>
+	</ul>
+
+	<table>
+		<caption>Título de la tabla</caption>
+		<tr>
+			<th>Nombre</th>
+			<th>Cédula</th>
+		</tr>
+		<tr>
+			<td>Juan</td>
+			<td>123</td>
+		</tr>
+		<tr >
+			<td style=" border:3px;border-color: black; border-style: double ">Ana</td>
+			<td>456</td>
+		</tr>
+		<tr>
+			<td>otro</td>
+			<td>456</td>
+		</tr>
+
+	</table>
+	<br>
+
+	<form action="otra.html" method="get">
+		<label>Nombre:</label><br>
+		<input type="text" name="nombre" placeholder="escribe tu nombre" required><br>
+
+		<label>Cedula:</label><br>
+		<input type="number" name="cedula" placeholder="3334333"><br>
+
+		<label>Contraseña:</label><br>
+		<input type="password" name="contrasena"><br>
+
+		<label>Teléfono:</label><br>
+		<input type="tel" name="telefono" ><br>
+
+		<label>Correo:</label><br>
+		<input type="email" name="email"><br>
+
+
+		<label>Fecha:</label><br>
+		<input type="date" name="email"><br>
+
+		<label>Color:</label><br>
+		<input type="color" name="email"><br>
+
+		<label>Comentarios:</label><br>
+		<textarea name="comentarios" rows="5" cols="30">
+		</textarea><br>
+
+		<label>Indique su género:</label>
+		<br>
+		<select name="genero">
+			<option>Femenino</option>
+			<option>Masculino</option>
+			<option>Otro</option> 
+		</select><br>
+		<hr>
+		<label>Indique su programa académico:</label><br>
+		<input type="radio" id="sistemas" name="programa" value="sistemas">
+		<label for="sistemas">Tecnología en Sistemas</label><br>
+		<input type="radio" id="gestion" name="programa" value="gestion">
+		<label for="gestion">Tecnología en Gestión Informática</label><br>
+		<input type="radio" id="diseno" name="programa" value="diseno">
+		<label for="diseno">Tecnología en Diseño y Desarrollo Web</label>
+		<hr>
+
+		<label>Indique sus intereses:</label><br>
+
+
+		<input type="checkbox" id="diseno" name="desarrollo[]" value="diseno">
+		<label for="diseno"> Diseño gráfico</label><br>
+		<input type="checkbox" id="desarrollo" name="desarrollo[]" value="desarrollo">
+		<label for="desarrollo"> Desarrollo web</label><br>
+		<input type="checkbox" id="bd" name="desarrollo[]" value="bd">
+		<label for="bd"> Bases de datos</label><br>
+		<input type="checkbox" id="requisitos" name="desarrollo[]" value="requisitos">
+		<label for="requisitos">Requisitos de Software</label>
+		<br>
+
+
+
+
+
+		<button type="submit">enviar</button>
+	</form>
+
+
+	<iframe id="iframepdf" src="archivos/archivo.pdf"  style="width:100%; height:80vh" ></iframe>
+
+	<a href="https://www.youtube.com/watch?v=wmOgLAU411E" target="_blank"><img src="mq2.jpg"></a>
+	<br>
+
+	<center><iframe width="50%" height="315" src="https://www.youtube.com/embed/wmOgLAU411E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<br>
+	<a class="twitter-timeline" data-lang="es" data-width="320" data-height="600" data-theme="light" href="https://twitter.com/tecdeantioquia?ref_src=twsrc%5Etfw">Tweets by tecdeantioquia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<blockquote class="twitter-tweet" data-width="500" data-lang="es" data-theme="light"><p lang="es" dir="ltr"><a href="https://twitter.com/tecdeantioquia?ref_src=twsrc%5Etfw">@tecdeantioquia</a> recibió renovación de la acreditación institucional de alta calidad por 8 años. Un logro de la familia TdeA <a href="https://twitter.com/GobAntioquia?ref_src=twsrc%5Etfw">@GobAntioquia</a> <a href="https://twitter.com/SecEducacionAnt?ref_src=twsrc%5Etfw">@SecEducacionAnt</a> <a href="https://twitter.com/Mineducacion?ref_src=twsrc%5Etfw">@Mineducacion</a> <a href="https://twitter.com/apelaezbotero?ref_src=twsrc%5Etfw">@apelaezbotero</a> <a href="https://t.co/QTJzw12Qri">https://t.co/QTJzw12Qri</a> <a href="https://t.co/jAuxnJ0N7J">pic.twitter.com/jAuxnJ0N7J</a></p>&mdash; TdeA (@tecdeantioquia) <a href="https://twitter.com/tecdeantioquia/status/1296843876804767744?ref_src=twsrc%5Etfw">21 de agosto de 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<br>
+	<br>
+
+	<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/linus_torvalds_the_mind_behind_linux" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+	<br>
+
+	<div style="width: 100%;"><div style="position: relative; padding-bottom: 50.00%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1600" height="800" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f3ec2e8fc68630d97057201" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+
+	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecdeantioquia%2F&tabs=timeline&width=400&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=322331694305" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+	<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NzM1bXY2YnRhcTc0NDRkcGJhbjE0Z21jbGcgc2ViYXN0aWFuLmdvbWV6LmpAbQ&amp;tmsrc=sebastian.gomez.j%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+
+	<div class="fb-page" data-href="https://www.facebook.com/tecdeantioquia" data-tabs="timeline, messages" data-width="400" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/tecdeantioquia" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tecdeantioquia">TdeA</a></blockquote></div>
+
+	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecdeantioquia&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=322331694305" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+	
+</body>
+</html>
