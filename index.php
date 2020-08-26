@@ -6,5 +6,6 @@
 <body>
 	<?php ?>
  	<ul>1</ul>
+	<p>hola todas</p>
 </body>
 </html>
