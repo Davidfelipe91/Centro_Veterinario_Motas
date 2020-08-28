@@ -7,5 +7,6 @@
 	<?php ?>
  	<ul>1</ul>
 	<p>hola todas</p>
+	<p>Prueba trabajo colaborativo</p>
 </body>
 </html>
